@@ -1,5 +1,9 @@
-NOM = input("Introduce el nombre del Dinosaurio: ")
-PES = float(input("Peso del Dinosaurio en ...))
-LON = float(input("Longitud del Dinosaurio en ...))
+NOM = raw_input('Nombre del Dinosaurio: ')
 
-PESKIL = 
+PES = float(input("Ingrese el Peso del Dinosaurio en Toneladas: "))
+LON = float(input("Ingrese la Longitud del Dinosaurio en Pies: "))
+
+PESKIL = PES *1000
+LONMET = LON * 0.3047
+
+print("El Dinosaurio %s tiene un peso de %.0f kilogramos y una longitud de %.2f metros" %(NOM, PESKIL, LONMET))
